@@ -3,9 +3,7 @@ import { SearchIcon, PlusCircleIcon } from '@heroicons/react/outline';
 import {HomeIcon} from "@heroicons/react/solid";
 export default function Header(){
     return(
-        
-          
-            
+            <div className="shadow-sm border-b sticky top-0 bg-white z-30">
             <div className="flex items-center justify-between max-w-6xl mx-4 xl:mx-auto">
                   
             {/*Left*/}
@@ -41,6 +39,7 @@ export default function Header(){
                <HomeIcon className=" hidden md:inline-flex h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out"/>
                <PlusCircleIcon className="h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out"/>
                <img src="https://png.pngtree.com/png-clipart/20200720/original/pngtree-luxury-letter-k-logo-design-png-image_4655196.jpg"alt="user-image" className="h-10  rounded-full"/>
+               </div>
                </div>
             </div>
 

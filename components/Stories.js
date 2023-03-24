@@ -24,5 +24,7 @@ export default function Stories() {
         <Story key={user.id} username={user.username}img={user.img} />
        ))}
     </div>
+    
+
   )
 }

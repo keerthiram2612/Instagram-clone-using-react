@@ -1,5 +1,5 @@
 import React from 'react'
-import { DotsHorizontalIcon,HeartIcon,ChatIcon,BookmarkIcon } from '@heroicons/react/outline'
+import { DotsHorizontalIcon,HeartIcon,ChatIcon,BookmarkIcon,EmojiHappyIcon } from '@heroicons/react/outline'
 
 export default function Post({img, userImg, caption,username,id}) {
   return (
@@ -16,7 +16,7 @@ export default function Post({img, userImg, caption,username,id}) {
       {/* Post Image*/}
 
       <img className="object-cover w-full" src={img}/>
-
+    
     {/* Post Buttons */}
 
     <div className="flex justify-between px-4 pt-4 ">
@@ -26,6 +26,18 @@ export default function Post({img, userImg, caption,username,id}) {
       </div>
       <BookmarkIcon className="btn"/>
     </div>
+
+    {/*Post comments*/}
+
+    <p className="p-5 truncate"><span className="font-bold mr-2">{username}</span>{caption}</p>
+
+    {/*Post input box*/}
+        <form className="flex items-center p-4">
+          <EmojiHappyIcon className="h-7"/>
+          <input className="border-none flex-1 focus:ring-0" type="text" placeholder="Enter your comment...."/>
+          <button className="text-blue-400 font-bold">Post</button>
+        </form>
+
     </div>
   )
 }
